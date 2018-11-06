@@ -1,0 +1,14 @@
+program ch0803
+    ! Example 3: Rank 1 Array Sections
+    implicit none
+
+    integer, dimension(-5:5) :: x
+    integer :: i
+
+    x(:-1) = -1
+    x(0) = 0
+    x(1:) = 1
+    do i = -5, 5
+        print *, ' ', i, ' ', x(i)
+    end do
+end program
